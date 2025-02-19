@@ -9,9 +9,9 @@ Welcome to the official GitHub repository of the Pacifiers team, participating i
 - **Organizers:** AI Innovators Community
 
 ## Team Members
-- Rauhan
-- Sourabh
-- Kush
+- Rauhan Kumar Roy
+- Sourabh Kumar
+- Kumar Kush
 - Sagar Kumar
 
 ## Project Overview
