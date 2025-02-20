@@ -11,8 +11,9 @@ Welcome to the official GitHub repository of the Pacifiers team, participating i
 ## Team Members
 - Rauhan Kumar Roy
 - Sourabh Kumar
-- Kumar Kush
 - Sagar Kumar
+- Kumar Kush
+
 
 ## Project Overview
 Our project aims to develop an AI-powered solution 
