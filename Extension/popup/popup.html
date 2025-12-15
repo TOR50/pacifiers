@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacifiers</title>
+    <link rel="stylesheet" href="popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span class="logo-icon">🛡️</span>
+                <h1>Pacifiers</h1>
+            </div>
+            <div class="toggle-switch">
+                <input type="checkbox" id="extensionToggle" checked>
+                <label for="extensionToggle"></label>
+            </div>
+        </header>
+
+        <main>
+            <div class="status-card">
+                <p class="status-text">Protection is <span id="statusIndicator" class="active">Active</span></p>
+                <p class="stats">Comments blocked today: <span id="blockedCount">0</span></p>
+            </div>
+
+            <div class="settings-section">
+                <h2>Protection Level</h2>
+                <div class="mode-selector">
+                    <div class="mode-option" data-mode="light">
+                        <span class="mode-emoji">🌤️</span>
+                        <span>Light</span>
+                    </div>
+                    <div class="mode-option selected" data-mode="medium">
+                        <span class="mode-emoji">⛅</span>
+                        <span>Medium</span>
+                    </div>
+                    <div class="mode-option" data-mode="strong">
+                        <span class="mode-emoji">⛈️</span>
+                        <span>Strong</span>
+                    </div>
+                </div>
+                <p id="modeDescription" class="mode-desc">Filters insults and harassment.</p>
+            </div>
+
+            <div class="api-section">
+                <h2>API Settings</h2>
+                <div class="input-group">
+                    <input type="password" id="apiKeyInput" placeholder="Enter Perspective API Key">
+                    <button id="saveKeyBtn">Save</button>
+                </div>
+                <p class="api-status" id="apiStatus"></p>
+            </div>
+        </main>
+
+        <footer>
+            <a href="#" id="viewLogs">View Logs</a>
+            <span class="version">v1.0.0</span>
+        </footer>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

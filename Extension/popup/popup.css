@@ -1,0 +1,233 @@
+:root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --primary: #3b82f6;
+    --primary-hover: #2563eb;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --danger: #ef4444;
+    --success: #22c55e;
+    --radius: 12px;
+}
+
+body {
+    width: 350px;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo h1 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    background: linear-gradient(135deg, #60a5fa, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo-icon {
+    font-size: 20px;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-switch input {
+    display: none;
+}
+
+.toggle-switch label {
+    width: 44px;
+    height: 24px;
+    background-color: #334155;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-switch input:checked + label {
+    background-color: var(--success);
+}
+
+.toggle-switch label::after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: transform 0.3s;
+}
+
+.toggle-switch input:checked + label::after {
+    transform: translateX(20px);
+}
+
+/* Status Card */
+.status-card {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius);
+    padding: 16px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.status-text {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+}
+
+.status-text .active {
+    color: var(--success);
+}
+
+.status-text .inactive {
+    color: var(--text-muted);
+}
+
+.stats {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+/* Settings Section */
+.settings-section h2, .api-section h2 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.mode-selector {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.mode-option {
+    flex: 1;
+    background-color: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.mode-option:hover {
+    background-color: #334155;
+}
+
+.mode-option.selected {
+    background-color: rgba(59, 130, 246, 0.2);
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.mode-emoji {
+    font-size: 20px;
+}
+
+.mode-desc {
+    font-size: 12px;
+    color: var(--text-muted);
+    text-align: center;
+    margin-top: 0;
+}
+
+/* API Section */
+.input-group {
+    display: flex;
+    gap: 8px;
+}
+
+input[type="password"] {
+    flex: 1;
+    background-color: var(--card-bg);
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 8px 12px;
+    color: white;
+    font-family: inherit;
+    font-size: 13px;
+}
+
+input[type="password"]:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+}
+
+.api-status {
+    font-size: 12px;
+    margin-top: 6px;
+    min-height: 18px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    font-size: 12px;
+    color: #475569;
+}
+
+footer a {
+    color: var(--text-muted);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--primary);
+}

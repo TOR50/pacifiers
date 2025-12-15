@@ -1,0 +1,44 @@
+/* Pacifiers Blur Styles */
+
+.pacifiers-blur {
+    filter: blur(6px) !important;
+    cursor: pointer !important;
+    user-select: none !important;
+    transition: filter 0.3s ease;
+    position: relative;
+}
+
+.pacifiers-blur:hover {
+    filter: blur(4px) !important;
+    /* Slight peak */
+}
+
+.pacifiers-blur::after {
+    content: '⚠️ Hidden Content';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 4px 8px;
+    border-radius: 4px;
+    pointer-events: none;
+    z-index: 9999;
+    white-space: nowrap;
+    text-shadow: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* Revealed State */
+.pacifiers-revealed {
+    filter: none !important;
+    cursor: auto !important;
+    user-select: text !important;
+}
+
+.pacifiers-revealed::after {
+    display: none;
+}
