@@ -2,7 +2,7 @@
 
 **Pacifiers** is an advanced browser extension designed to create a safer, more positive online experience. Using Google's Perspective API, it automatically detects and blurs hate speech, toxicity, and harassment in real-time across social media platforms.
 
-![Preview](docs/images/preview1.png)
+![Preview](asset/extension_image.png)
 
 ## 🌟 Features
 
@@ -15,7 +15,7 @@
 *   **Click-to-Reveal**: Found something blocked? Hover to check, and click to reveal if you really want to see it.
 *   **Live Dashboard**: Track how many toxic comments have been blocked today.
 
-![UI Preview](docs/images/preview2.png)
+![UI Preview](asset/extension_image.png)
 
 ---
 
@@ -63,7 +63,7 @@ We have included a verified "Test Bench" to simulate toxic content safely.
 2.  You will see simulated Social Media posts.
 3.  If configured correctly, the toxic ones will typically look like this:
 
-![Test Bench Blur](docs/images/test_bench.png)
+![Test Bench Blur](asset/example_website_image_with_extension_on.png)
 
 ## 📸 Gallery
 
