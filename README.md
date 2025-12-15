@@ -21,7 +21,7 @@ Our project aims to develop an AI-powered solution
 ## Highlights
 - **Innovative Approach:** Utilizing cutting-edge AI technologies.
 - **Collaboration:** Strong teamwork and collaboration among members.
-- **Impact:** Potential to make a significant impact in [specific area].
+- **Impact:** Potential to make a significant impact in minimizing hate speech.
 
 ## Join Us on Discord
 Stay connected with our team and follow our progress on Discord! [Join our Discord Server](https://discord.gg/SbN5PedNeN)
